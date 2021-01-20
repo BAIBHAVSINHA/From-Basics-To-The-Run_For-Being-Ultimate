@@ -7,3 +7,15 @@ class Source
        obj.setName("Ankit");
    }
 }
+
+class Person {
+   private String name;
+   public String getName() {
+       return name;
+   }
+   
+   // Declare a setter method here
+   public void setName(String newName) {
+    this.name = newName;
+  }
+}
