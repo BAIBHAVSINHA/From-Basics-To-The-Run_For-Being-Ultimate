@@ -7,3 +7,17 @@ class Source {
     System.out.println("Percentage of s1 is "+s1.findPercentage());
     }
 }
+
+class Student {
+    public int rollno;
+    public String name;
+    public double cgpa;
+
+    // Declare constructor of 'Student' class here
+    public Student(int r,String n, double c)
+    {
+        rollno = r;
+        name = n;
+        cgpa = c;
+    }
+    
