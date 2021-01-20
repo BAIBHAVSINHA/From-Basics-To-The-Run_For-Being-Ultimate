@@ -21,3 +21,11 @@ class Student {
         cgpa = c;
     }
     
+public void displayProfile() {
+        System.out.println(rollno + " " + name + " " + cgpa);
+    }
+    public double findPercentage() {
+        double percent = cgpa * 10;
+        return percent;
+    }
+}
