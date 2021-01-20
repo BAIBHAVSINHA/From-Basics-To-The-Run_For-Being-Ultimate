@@ -8,3 +8,16 @@ class Source{
     System.out.println(s2.area());
     }
 }
+
+class Square
+{
+    public float length;
+    Square(float length)
+    {
+        this.length = length;
+    }
+    public float area()
+    {
+        return length * length;
+    }
+}
