@@ -6,3 +6,9 @@ class Source {
        System.out.println(H.getName());
    }
 }
+class Person {
+   private String name;
+   public Person(String name) 
+   {       
+       this.name = name;
+   }
