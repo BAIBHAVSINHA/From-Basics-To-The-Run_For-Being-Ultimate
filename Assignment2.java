@@ -16,3 +16,10 @@ class Road {
         this.safetyScore = safetyScore;
     }
 }
+class RoadMap {
+    Map<String, Set<Road>> roadMap = new HashMap<String, Set<Road>>();
+
+    //This function helps to get all the cities in the graph	
+    public Set<String> getAllCities() {
+        return this.roadMap.keySet();
+    }
