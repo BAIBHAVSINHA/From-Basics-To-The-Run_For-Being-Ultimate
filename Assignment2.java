@@ -73,3 +73,13 @@ public class GraphAssignment {
         public SafetyComparator(Map<String, Integer> safety) {
             this.safety = safety;
         }
+public int compare(String c1, String c2) {
+            if (this.safety.get(c1) < this.safety.get(c2)) {
+                return -1;
+            } else if (this.safety.get(c1) > this.safety.get(c2)) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    }
