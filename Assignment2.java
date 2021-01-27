@@ -93,3 +93,9 @@ public static void readReport(Scanner scanner) {
         }
 
     }
+public static void findSafestRouteToCity(String source, String destination) {
+        // PART-B: Write the java code to find the safest route between any two cities
+
+        //Note:The report values of safety are between 1-100
+
+    }
