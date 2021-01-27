@@ -36,4 +36,9 @@ class RoadMap {
     }
 
     //This function will add both outgoing and incoming roads between two cities
-    
+    private void addRoad(String city1, String city2, int safetyScore) {
+        Road road1 = new Road(city1, city2, safetyScore);
+        Road road2 = new Road(city2, city1, safetyScore);
+        if (!this.roadMap.containsKey(city1)) {
+            addCity(city1);
+        }
