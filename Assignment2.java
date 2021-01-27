@@ -67,3 +67,9 @@ public class GraphAssignment {
             safetyPath.put(road.city2, road.city1);
         }
     }
+ static class SafetyComparator implements Comparator<String> {
+        private final Map<String, Integer> safety;
+
+        public SafetyComparator(Map<String, Integer> safety) {
+            this.safety = safety;
+        }
