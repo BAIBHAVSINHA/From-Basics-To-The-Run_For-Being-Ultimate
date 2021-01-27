@@ -6,3 +6,7 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
+class Road {
+    public String city1;
+    public String city2;
+    public int safetyScore;
