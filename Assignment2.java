@@ -83,3 +83,13 @@ public int compare(String c1, String c2) {
             }
         }
     }
+public static void readReport(Scanner scanner) {
+        while (true) {
+            String mapLine = scanner.nextLine();
+            if (mapLine.equals("")) {
+                break;
+            }
+            roadMap.readLine(mapLine);
+        }
+
+    }
