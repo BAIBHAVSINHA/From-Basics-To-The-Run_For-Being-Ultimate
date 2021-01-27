@@ -53,3 +53,17 @@ Road road1 = new Road(city1, city2);
     }
 
 }
+public class GraphAssignment {
+    static RoadMap roadMap = new RoadMap();
+
+    public static void readMap(Scanner scanner) {
+        while (true) {
+            String mapLine = scanner.nextLine();
+            if (mapLine.equals("")) {
+                break;
+            }
+            roadMap.readLine(mapLine);
+        }
+        System.out.println("Read map");
+
+    }
