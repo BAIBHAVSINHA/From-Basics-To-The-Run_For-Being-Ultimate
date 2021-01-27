@@ -49,3 +49,9 @@ if (!this.roadMap.containsKey(city2)) {
         this.roadMap.get(city1).add(road1);
         this.roadMap.get(city2).add(road2);
     }
+ //This function will return all the outgoing roads from a city
+    public Set<Road> getAllOutgoingRoads(String node) {
+        return this.roadMap.get(node);
+    }
+
+}
