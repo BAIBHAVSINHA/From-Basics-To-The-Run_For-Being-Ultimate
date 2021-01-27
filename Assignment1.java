@@ -36,7 +36,7 @@ private void addCity(String city) {
 
     //This function will add both outgoing and incoming roads between two cities
     private void addRoad(String city1, String city2) {
-Road road1 = new Road(city1, city2);
+        Road road1 = new Road(city1, city2);
         Road road2 = new Road(city2, city1);
         if (!this.roadMap.containsKey(city1)) {
             addCity(city1);
@@ -72,7 +72,7 @@ public class GraphAssignment {
     }
 
     public static void main(String[] args) {
-Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the Map");
         readMap(scanner);
 
@@ -81,7 +81,7 @@ Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the destination ");
         String destination = scanner.nextLine();
         System.out.println("The route from "+source+" to "+destination+" is");
-findAnyRouteToCity(source, destination);
+        findAnyRouteToCity(source, destination);
     }
 
 }
