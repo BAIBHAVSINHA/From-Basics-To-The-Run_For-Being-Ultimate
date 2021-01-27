@@ -99,3 +99,7 @@ public static void findSafestRouteToCity(String source, String destination) {
         //Note:The report values of safety are between 1-100
 
     }
+public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the graph");
+        readReport(scanner);
