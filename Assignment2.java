@@ -55,3 +55,15 @@ if (!this.roadMap.containsKey(city2)) {
     }
 
 }
+public class GraphAssignment {
+
+    static RoadMap roadMap = new RoadMap();
+    static int maxValue = 100000;
+
+    private static void relax(Road road, Map<String, Integer> safety, Map<String, String> safetyPath) {
+        int possible = safety.get(road.city1) + road.safetyScore;
+        if (safety.get(road.city2) > possible) {
+            safety.put(road.city2, possible);
+            safetyPath.put(road.city2, road.city1);
+        }
+    }
