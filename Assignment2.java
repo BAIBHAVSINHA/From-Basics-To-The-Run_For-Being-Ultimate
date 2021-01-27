@@ -23,3 +23,11 @@ class RoadMap {
     public Set<String> getAllCities() {
         return this.roadMap.keySet();
     }
+ //This function will read the input
+    public void readLine(String line) {
+        String[] csv = line.split(",");
+        String city1 = csv[0];
+        String city2 = csv[1];
+        int safety = Integer.parseInt(csv[2]);
+        addRoad(city1, city2, safety);
+    }
