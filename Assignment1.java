@@ -72,3 +72,14 @@ public class GraphAssignment {
     }
 
     public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the Map");
+        readMap(scanner);
+
+        System.out.println("Enter the source ");
+        String source = scanner.nextLine();
+        System.out.println("Enter the destination ");
+        String destination = scanner.nextLine();
+        System.out.println("The route from "+source+" to "+destination+" is");
+
+        
