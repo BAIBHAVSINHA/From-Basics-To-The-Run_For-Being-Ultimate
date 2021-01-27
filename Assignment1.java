@@ -36,3 +36,14 @@ private void addCity(String city) {
 
     //This function will add both outgoing and incoming roads between two cities
     private void addRoad(String city1, String city2) {
+Road road1 = new Road(city1, city2);
+        Road road2 = new Road(city2, city1);
+        if (!this.roadMap.containsKey(city1)) {
+            addCity(city1);
+        }
+        if (!this.roadMap.containsKey(city2)) {
+            addCity(city2);
+        }
+        this.roadMap.get(city1).add(road1);
+        this.roadMap.get(city2).add(road2);
+    }
