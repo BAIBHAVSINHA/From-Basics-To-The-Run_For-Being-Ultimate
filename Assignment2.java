@@ -42,3 +42,10 @@ class RoadMap {
         if (!this.roadMap.containsKey(city1)) {
             addCity(city1);
         }
+if (!this.roadMap.containsKey(city2)) {
+            addCity(city2);
+        }
+
+        this.roadMap.get(city1).add(road1);
+        this.roadMap.get(city2).add(road2);
+    }
