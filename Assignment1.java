@@ -30,3 +30,9 @@ class RoadMap {
         String city2 = csv[1];
         addRoad(city1, city2);
     }
+private void addCity(String city) {
+        this.roadMap.put(city, new HashSet<Road>());
+    }
+
+    //This function will add both outgoing and incoming roads between two cities
+    private void addRoad(String city1, String city2) {
