@@ -10,3 +10,9 @@ class Road {
     public String city1;
     public String city2;
     public int safetyScore;
+ public Road(String city1, String city2, int safetyScore) {
+        this.city1 = city1;
+        this.city2 = city2;
+        this.safetyScore = safetyScore;
+    }
+}
